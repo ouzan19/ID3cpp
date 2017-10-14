@@ -1,0 +1,22 @@
+% Auto-generated on Sun Mar 27 07:04:12 EEST 2016
+
+%  'T:' Identifies the Attribute Title Line
+%  'A:' Identifies Training Set Examples
+%  'B:' Identifies Test Set Examples
+
+T: Comedy, Doctors, Lawyers, Guns, Likes;
+A: false, true, false, false, false;
+A: true, false, true, false, true;
+A: false, false, true, true, true;
+A: false, false, true, false, false;
+A: false, false, false, true, false;
+A: true, false, false, true, false;
+A: true, false, false, false, true;
+A: false, true, true, true, true;
+A: false, true, true, false, false;
+A: true, true, true, false, true;
+A: true, true, false, true, false;
+A: false, false, false, false, false;
+A: true, true, false, false, true;
+
+B: false, true, false, false, false;

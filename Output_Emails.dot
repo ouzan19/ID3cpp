@@ -1,0 +1,24 @@
+digraph G
+ {
+graph [label="Decision Tree\n\nNumber of Nodes = 7\nNumber of Splits = 3\nMaximum Depth = 3\n", labelloc = t];
+  1 [shape=box, color=red, label="Split: Length\nEntropy = 1\nInstances = 18\nDecision = skips"] ;
+  1 -> 11[label="long"] ;
+  1 -> 12[label="short"] ;
+
+  11 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 7\nDecision = skips"] ;
+
+  12 [shape=box, color=red, label="Split: Thread\nEntropy = 0.684038\nInstances = 11\nDecision = reads"] ;
+  12 -> 121[label="follow_up"] ;
+  12 -> 122[label="new"] ;
+
+  121 [shape=box, color=red, label="Split: Author\nEntropy = 1\nInstances = 4\nDecision = skips"] ;
+  121 -> 1211[label="known"] ;
+  121 -> 1212[label="unknown"] ;
+
+  1211 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = reads"] ;
+
+  1212 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = skips"] ;
+
+  122 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 7\nDecision = reads"] ;
+
+}

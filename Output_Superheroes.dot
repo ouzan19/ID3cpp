@@ -1,0 +1,30 @@
+digraph G
+ {
+graph [label="Decision Tree\n\nNumber of Nodes = 9\nNumber of Splits = 1\nMaximum Depth = 1\n", labelloc = t];
+  1 [shape=box, color=red, label="Split: SuperPower\nEntropy = 3.32193\nInstances = 20\nDecision = Storm"] ;
+  1 -> 18[label="Weapon"] ;
+  1 -> 17[label="Vision"] ;
+  1 -> 11[label="Combat"] ;
+  1 -> 16[label="Sword"] ;
+  1 -> 12[label="Control"] ;
+  1 -> 13[label="Flight"] ;
+  1 -> 15[label="Strength"] ;
+  1 -> 14[label="Speed"] ;
+
+  18 [shape=box, color=blue, label="Split: Leaf\nEntropy = 2\nInstances = 4\nDecision = Batman"] ;
+
+  17 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = Superman"] ;
+
+  11 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = CatWoman"] ;
+
+  16 [shape=box, color=blue, label="Split: Leaf\nEntropy = 1.58496\nInstances = 3\nDecision = WonderWoman"] ;
+
+  12 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = Storm"] ;
+
+  13 [shape=box, color=blue, label="Split: Leaf\nEntropy = 1\nInstances = 2\nDecision = Superman"] ;
+
+  15 [shape=box, color=blue, label="Split: Leaf\nEntropy = 2.58496\nInstances = 6\nDecision = WonderWoman"] ;
+
+  14 [shape=box, color=blue, label="Split: Leaf\nEntropy = 1\nInstances = 2\nDecision = Storm"] ;
+
+}

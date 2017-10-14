@@ -1,0 +1,256 @@
+digraph G
+ {
+graph [label="Decision Tree\n\nNumber of Nodes = 23\nNumber of Splits = 9\nMaximum Depth = 4\n", labelloc = t];
+  1 [shape=box, color=red, label="Split: Legs\nEntropy = 2.39056\nInstances = 101\nDecision = 1
+\n Value  Count\n1 :  41
+2 :  20
+3 :  5
+4 :  13
+5 :  4
+6 :  8
+7 :  10
+"];
+  1 -> 16[label="8"] ;
+  1 -> 11[label="0"] ;
+  1 -> 12[label="2"] ;
+  1 -> 13[label="4"] ;
+  1 -> 14[label="5"] ;
+  1 -> 15[label="6"] ;
+
+  16 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  2
+"];
+
+  11 [shape=box, color=red, label="Split: Fins\nEntropy = 1.67071\nInstances = 23\nDecision = 4
+\n Value  Count\n1 :  3
+2 :  0
+3 :  3
+4 :  13
+5 :  0
+6 :  0
+7 :  4
+"];
+  11 -> 111[label="0"] ;
+  11 -> 112[label="1"] ;
+
+  111 [shape=box, color=red, label="Split: Teeth\nEntropy = 0.985228\nInstances = 7\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  3
+4 :  0
+5 :  0
+6 :  0
+7 :  4
+"];
+  111 -> 1111[label="0"] ;
+  111 -> 1112[label="1"] ;
+
+  1111 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 4\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  4
+"];
+
+  1112 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 3\nDecision = 3
+\n Value  Count\n1 :  0
+2 :  0
+3 :  3
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  112 [shape=box, color=red, label="Split: Eggs\nEntropy = 0.696212\nInstances = 16\nDecision = 4
+\n Value  Count\n1 :  3
+2 :  0
+3 :  0
+4 :  13
+5 :  0
+6 :  0
+7 :  0
+"];
+  112 -> 1121[label="0"] ;
+  112 -> 1122[label="1"] ;
+
+  1121 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 3\nDecision = 1
+\n Value  Count\n1 :  3
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  1122 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 13\nDecision = 4
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  13
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  12 [shape=box, color=red, label="Split: Hair\nEntropy = 0.825627\nInstances = 27\nDecision = 2
+\n Value  Count\n1 :  7
+2 :  20
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+  12 -> 121[label="0"] ;
+  12 -> 122[label="1"] ;
+
+  121 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 20\nDecision = 2
+\n Value  Count\n1 :  0
+2 :  20
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  122 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 7\nDecision = 1
+\n Value  Count\n1 :  7
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  13 [shape=box, color=red, label="Split: Hair\nEntropy = 0.943188\nInstances = 38\nDecision = 1
+\n Value  Count\n1 :  31
+2 :  0
+3 :  2
+4 :  0
+5 :  4
+6 :  0
+7 :  1
+"];
+  13 -> 131[label="0"] ;
+  13 -> 132[label="1"] ;
+
+  131 [shape=box, color=red, label="Split: Aquatic\nEntropy = 1.37878\nInstances = 7\nDecision = 5
+\n Value  Count\n1 :  0
+2 :  0
+3 :  2
+4 :  0
+5 :  4
+6 :  0
+7 :  1
+"];
+  131 -> 1311[label="0"] ;
+  131 -> 1312[label="1"] ;
+
+  1311 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = 3
+\n Value  Count\n1 :  0
+2 :  0
+3 :  2
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  1312 [shape=box, color=red, label="Split: Teeth\nEntropy = 0.721928\nInstances = 5\nDecision = 5
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  4
+6 :  0
+7 :  1
+"];
+  1312 -> 13121[label="0"] ;
+  1312 -> 13122[label="1"] ;
+
+  13121 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  1
+"];
+
+  13122 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 4\nDecision = 5
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  4
+6 :  0
+7 :  0
+"];
+
+  132 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 31\nDecision = 1
+\n Value  Count\n1 :  31
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  0
+"];
+
+  14 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  1
+"];
+
+  15 [shape=box, color=red, label="Split: Aquatic\nEntropy = 0.721928\nInstances = 10\nDecision = 6
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  8
+7 :  2
+"];
+  15 -> 151[label="0"] ;
+  15 -> 152[label="1"] ;
+
+  151 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 8\nDecision = 6
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  8
+7 :  0
+"];
+
+  152 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = 7
+\n Value  Count\n1 :  0
+2 :  0
+3 :  0
+4 :  0
+5 :  0
+6 :  0
+7 :  2
+"];
+
+}

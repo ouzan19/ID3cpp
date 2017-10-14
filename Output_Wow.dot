@@ -1,0 +1,255 @@
+digraph G
+ {
+graph [label="Decision Tree\n\nNumber of Nodes = 36\nNumber of Splits = 9\nMaximum Depth = 5\n", labelloc = t];
+  1 [shape=box, color=red, label="Split: PvP\nEntropy = 1.29326\nInstances = 103\nDecision = PvE
+\n Value  Count\nNolife :  11
+PvE :  63
+PvP :  29
+"];
+  1 -> 1*1[label="1"] ;
+  1 -> 1*2[label="2"] ;
+  1 -> 1*3[label="3"] ;
+  1 -> 1*4[label="4"] ;
+
+  1*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 14\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  14
+PvP :  0
+"];
+
+  1*2 [shape=box, color=red, label="Split: Dungeons\nEntropy = 0.503258\nInstances = 54\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  48
+PvP :  6
+"];
+  1*2 -> 1*2*1[label="2"] ;
+  1*2 -> 1*2*2[label="3"] ;
+  1*2 -> 1*2*3[label="4"] ;
+
+  1*2*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*2*2 [shape=box, color=red, label="Split: Scenario\nEntropy = 0.637388\nInstances = 31\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  26
+PvP :  5
+"];
+  1*2*2 -> 1*2*2*1[label="1"] ;
+  1*2*2 -> 1*2*2*2[label="2"] ;
+  1*2*2 -> 1*2*2*3[label="3"] ;
+  1*2*2 -> 1*2*2*4[label="4"] ;
+
+  1*2*2*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*2*2*2 [shape=box, color=red, label="Split: Rep\nEntropy = 0.749595\nInstances = 14\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  11
+PvP :  3
+"];
+  1*2*2*2 -> 1*2*2*2*1[label="1"] ;
+  1*2*2*2 -> 1*2*2*2*2[label="2"] ;
+  1*2*2*2 -> 1*2*2*2*3[label="3"] ;
+  1*2*2*2 -> 1*2*2*2*4[label="4"] ;
+
+  1*2*2*2*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  1
+PvP :  0
+"];
+
+  1*2*2*2*2 [shape=box, color=red, label="Split: Pet\nEntropy = 0.721928\nInstances = 5\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  4
+PvP :  1
+"];
+  1*2*2*2*2 -> 1*2*2*2*2*1[label="1"] ;
+  1*2*2*2*2 -> 1*2*2*2*2*2[label="2"] ;
+  1*2*2*2*2 -> 1*2*2*2*2*3[label="3"] ;
+  1*2*2*2*2 -> 1*2*2*2*2*4[label="4"] ;
+
+  1*2*2*2*2*1 [shape=box, color=blue, label="Split: Leaf\nEntropy = 0.918296\nInstances = 3\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  2
+PvP :  1
+"];
+
+  1*2*2*2*2*2 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  2
+PvP :  0
+"];
+
+  1*2*2*2*2*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 0\nDecision = 
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  0
+"];
+
+  1*2*2*2*2*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 0\nDecision = 
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  0
+"];
+
+  1*2*2*2*3 [shape=box, color=red, label="Split: Pet\nEntropy = 0.863121\nInstances = 7\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  5
+PvP :  2
+"];
+  1*2*2*2*3 -> 1*2*2*2*3*1[label="1"] ;
+  1*2*2*2*3 -> 1*2*2*2*3*2[label="2"] ;
+  1*2*2*2*3 -> 1*2*2*2*3*3[label="3"] ;
+  1*2*2*2*3 -> 1*2*2*2*3*4[label="4"] ;
+
+  1*2*2*2*3*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  2
+PvP :  0
+"];
+
+  1*2*2*2*3*2 [shape=box, color=blue, label="Split: Leaf\nEntropy = 1\nInstances = 4\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  2
+PvP :  2
+"];
+
+  1*2*2*2*3*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  1
+PvP :  0
+"];
+
+  1*2*2*2*3*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 0\nDecision = 
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  0
+"];
+
+  1*2*2*2*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  1
+PvP :  0
+"];
+
+  1*2*2*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 15\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  15
+PvP :  0
+"];
+
+  1*2*2*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*2*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 22\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  22
+PvP :  0
+"];
+
+  1*3 [shape=box, color=red, label="Split: Pet\nEntropy = 0.856996\nInstances = 21\nDecision = PvP
+\n Value  Count\nNolife :  3
+PvE :  1
+PvP :  17
+"];
+  1*3 -> 1*3*1[label="1"] ;
+  1*3 -> 1*3*2[label="2"] ;
+  1*3 -> 1*3*3[label="3"] ;
+  1*3 -> 1*3*4[label="4"] ;
+
+  1*3*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 7\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  7
+"];
+
+  1*3*2 [shape=box, color=red, label="Split: Quests\nEntropy = 0.591673\nInstances = 7\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  1
+PvP :  6
+"];
+  1*3*2 -> 1*3*2*1[label="1"] ;
+  1*3*2 -> 1*3*2*2[label="2"] ;
+  1*3*2 -> 1*3*2*3[label="3"] ;
+  1*3*2 -> 1*3*2*4[label="4"] ;
+
+  1*3*2*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*3*2*2 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*3*2*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvE
+\n Value  Count\nNolife :  0
+PvE :  1
+PvP :  0
+"];
+
+  1*3*2*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 4\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  4
+"];
+
+  1*3*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 4\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  4
+"];
+
+  1*3*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 3\nDecision = Nolife
+\n Value  Count\nNolife :  3
+PvE :  0
+PvP :  0
+"];
+
+  1*4 [shape=box, color=red, label="Split: Rep\nEntropy = 0.985228\nInstances = 14\nDecision = Nolife
+\n Value  Count\nNolife :  8
+PvE :  0
+PvP :  6
+"];
+  1*4 -> 1*4*1[label="1"] ;
+  1*4 -> 1*4*2[label="2"] ;
+  1*4 -> 1*4*3[label="3"] ;
+  1*4 -> 1*4*4[label="4"] ;
+
+  1*4*1 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 1\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  1
+"];
+
+  1*4*2 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 3\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  3
+"];
+
+  1*4*3 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 2\nDecision = PvP
+\n Value  Count\nNolife :  0
+PvE :  0
+PvP :  2
+"];
+
+  1*4*4 [shape=box, color=green, label="Split: Leaf\nEntropy = 0\nInstances = 8\nDecision = Nolife
+\n Value  Count\nNolife :  8
+PvE :  0
+PvP :  0
+"];
+
+}

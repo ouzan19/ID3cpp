@@ -1,0 +1,23 @@
+% Auto-generated on Sat Apr 02 04:56:22 EEST 2016
+
+%  'T:' Identifies the Attribute Title Line
+%  'A:' Identifies Training Set Examples
+%  'B:' Identifies Test Set Examples
+
+T: O, T, H, W, PT;
+A: Sunny, hot, high, weak, no;
+A: Sunny, hot, high, strong, no;
+A: cast, hot, high, weak, yes;
+A: Rain, mild, high, weak, yes;
+A: Rain, cool, Normal, weak, yes;
+A: Rain, cool, Normal, strong, no;
+A: cast, cool, Normal, strong, yes;
+A: Sunny, mild, high, weak, no;
+A: Sunny, cool, Normal, weak, yes;
+A: Rain, mild, Normal, weak, yes;
+A: Sunny, mild, Normal, strong, yes;
+A: cast, mild, high, strong, yes;
+A: cast, hot, Normal, weak, yes;
+A: Rain, mild, high, strong, no;
+
+B: Rain, mild, high, strong, high;

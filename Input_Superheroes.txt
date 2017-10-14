@@ -1,0 +1,29 @@
+% Auto-generated on Sat Apr 02 19:31:32 EEST 2016
+
+%  'T:' Identifies the Attribute Title Line
+%  'A:' Identifies Training Set Examples
+%  'B:' Identifies Test Set Examples
+
+T: SuperPower, SuperHero;
+A: Control, Storm;
+A: Speed, Storm;
+A: Flight, Superman;
+A: Vision, Superman;
+A: Strength, WonderWoman;
+A: Sword, WonderWoman;
+A: Strength, Batman;
+A: Weapon, Batman;
+A: Strength, BlackWidow;
+A: Weapon, BlackWidow;
+A: Flight, IronMan;
+A: Weapon, IronMan;
+A: Speed, CatWoman;
+A: Combat, CatWoman;
+A: Strength, HeMan;
+A: Sword, HeMan;
+A: Strength, SheRa;
+A: Sword, SheRa;
+A: Strength, Thor;
+A: Weapon, Thor;
+
+B: Weapon, Thor;
